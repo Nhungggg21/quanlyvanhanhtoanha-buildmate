@@ -1,9 +1,6 @@
 services:
   - type: web
     name: quanlyvanhanhtoanha-buildmate
-    env: php
-    buildCommand: ""
-    startCommand: ""
+    env: docker
     plan: free
-    autoDeploy: true
-    region: oregon
+    dockerfilePath: ./Dockerfile
